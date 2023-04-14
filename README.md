@@ -34,7 +34,7 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
-Visit http://localhost:3000
+Visit http://localhost:8090
 
 ## Running the app with Docker
 
@@ -47,13 +47,13 @@ $ docker build -t chatgpt-mirror .
 ### Run the container
 
 ```bash
-$ docker run -d -p 3000:3000 --env-file .env chatgpt-mirror
+$ docker run -d -p 8090:8090 --env-file .env chatgpt-mirror
 ```
 
 ### Run with the config file
 
 ```bash
-$ docker run -d -p 3000:3000 --env-file .env -v $(pwd)/config/app.config.json:/app/config/app.config.json chatgpt-mirror
+$ docker run -d -p 8090:8090 --env-file .env -v $(pwd)/config/app.config.json:/app/config/app.config.json chatgpt-mirror
 ```
 
 ## Configuration
